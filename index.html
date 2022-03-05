@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" id="bgimg">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>HYC的个人主页</title>
+<meta name="description" content="HYC的个人主页">
+<meta name="keywords" content="HYC的个人主页">
+<link rel="icon" href="" mce_href="/dir/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/buttons.css">
+<link rel="stylesheet" type="text/css" href="https://www.bootcss.com/p/buttons/css/showcase.css">
+<link type="text/css" rel="stylesheet" href="style.css" />
+<meta name="referrer" content="no-referrer" />
+<div style="text-align:center;clear:both">
+</div>
+<div class="tooltips">
+<span>
+<iframe src="https://music.163.com/outchain/player?type=0&id=3052064923&auto=1&height=280" width=330 height="300" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+</span>
+</div>
+</head>
+<body>
+<div id="top">
+<main id="top_main">
+<div id="top_logo"><img src="src/tx2.png" onmouseover="mouseOver()" onmouseout="mouseOut()" id="mainimg"></div>
+<div id="top_title"><img id="top_title01" alt="" src="src/toptitle01.png">
+<br class="top_hr_style01">
+</div><br><br>
+<div class="showcase-examples l-over l-center">
+  <a href="https://www.bilibili.com/" title="哔哩哔哩" class="button button-rounded button-plain button-small-caps button-border" target="_blank">哔哩哔哩</a>
+  <a href="https://hongyuanchao.github.io/faff/" title="个人介绍" class="button button-rounded button-plain button-small-caps button-border" target="_blank">个人介绍</a>
+  <a href="https://lol.qq.com/main.shtml" title="英雄联盟" class="button button-rounded button-plain button-small-caps button-border"target="_blank" >英雄联盟</a>
+  <a href="https://limestart.cn/" title="青柠起始" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >青柠起始</a>
+  <a href="https://v.qq.com/" title="腾讯视频" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >腾讯视频</a>
+    <a href="https://www.iqiyi.com/" title="爱奇艺" class="button button-rounded button-plain button-small-caps button-border" target="_blank" >爱奇艺</a>
+  </div>
+</main>
+</div>
+<footer id="top_footer">
+<span id="top_copyright">
+<hr class="top_hr_style02">
+≧ω≦つ这里是洪园超的个人主页：<a href="https://www.sohu.com/a/340952738_236878">一声梧叶一声秋，一点芭蕉一点愁，三更归梦三更后。</a>
+<hr class="top_hr_style02">
+<a href="https://mail.qq.com/">个人邮箱</a> 1332292034@qq.com <a href=""></a>
+</span>
+</footer>
+</body>
+<script>
+	function mouseOver(){
+		document.getElementById("mainimg").src="src/tx.png";//鼠标悬浮时的旋转图标
+	}
+	function mouseOut()
+	{
+		document.getElementById('mainimg').src ="src/tx2.png"//默认的旋转图标
+	}
+</script>
+<script type="text/javascript">
+	function change(){
+		var bodyBgs = [];
+bodyBgs[1] = "https://images4.alphacoders.com/706/thumb-1920-706365.png";
+bodyBgs[2] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[3] = "https://images4.alphacoders.com/706/thumb-1920-706365.png";
+bodyBgs[4] = "https://images4.alphacoders.com/706/thumb-1920-706365.png";
+bodyBgs[5] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[6] = "https://images4.alphacoders.com/706/thumb-1920-706365.png";
+bodyBgs[7] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[8] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[9] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[10] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[11] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+bodyBgs[12] = "https://images2.alphacoders.com/713/thumb-1920-713297.png";
+		var randomBgIndex = Math.round( Math.random() * 12 );
+		var img1= document.getElementById('bgimg');
+		img1.style.backgroundImage='url(' + bodyBgs[randomBgIndex] + ')';
+	        window.setTimeout(function(){change()},10000);
+	}
+	change();
+</script>
+<script type="text/javascript" src="src/snow.min.js"></script>        
+<script type="text/javascript">
+createSnow('src/', 60);
+</script>
+</html>
